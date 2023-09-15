@@ -65,6 +65,10 @@
             this.listCashierQueue.TabIndex = 2;
             this.listCashierQueue.UseCompatibleStateImageBehavior = false;
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // CashierWindowQueue
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);

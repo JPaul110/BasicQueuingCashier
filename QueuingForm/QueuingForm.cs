@@ -15,7 +15,8 @@ namespace QueuingForm
         private CashierClass cashier = new CashierClass();
         public QueuingForm()
         {
-            CashierWindowQueue queue = new CashierWindowQueue();
+            CashierWindowQueue CashierFrm = new CashierWindowQueue();
+            CashierFrm.Show();
             InitializeComponent();
             cashier = new CashierClass();//cash
         }
