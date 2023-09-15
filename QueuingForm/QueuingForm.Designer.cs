@@ -48,10 +48,10 @@
             // lblQueue
             // 
             this.lblQueue.AutoSize = true;
-            this.lblQueue.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQueue.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQueue.Location = new System.Drawing.Point(217, 82);
             this.lblQueue.Name = "lblQueue";
-            this.lblQueue.Size = new System.Drawing.Size(202, 73);
+            this.lblQueue.Size = new System.Drawing.Size(118, 42);
             this.lblQueue.TabIndex = 1;
             this.lblQueue.Text = "          ";
             // 
