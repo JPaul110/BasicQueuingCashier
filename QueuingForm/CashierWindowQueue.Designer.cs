@@ -31,8 +31,8 @@
             this.components = new System.ComponentModel.Container();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.btnNext = new System.Windows.Forms.Button();
-            this.listCashierQueue = new System.Windows.Forms.ListView();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.listCashierQueue = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // btnRefresh
@@ -55,19 +55,19 @@
             this.btnNext.TabIndex = 1;
             this.btnNext.Text = "Next";
             this.btnNext.UseVisualStyleBackColor = true;
-            // 
-            // listCashierQueue
-            // 
-            this.listCashierQueue.HideSelection = false;
-            this.listCashierQueue.Location = new System.Drawing.Point(124, 12);
-            this.listCashierQueue.Name = "listCashierQueue";
-            this.listCashierQueue.Size = new System.Drawing.Size(253, 382);
-            this.listCashierQueue.TabIndex = 2;
-            this.listCashierQueue.UseCompatibleStateImageBehavior = false;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // listCashierQueue
+            // 
+            this.listCashierQueue.FormattingEnabled = true;
+            this.listCashierQueue.Location = new System.Drawing.Point(131, 13);
+            this.listCashierQueue.Name = "listCashierQueue";
+            this.listCashierQueue.Size = new System.Drawing.Size(246, 381);
+            this.listCashierQueue.TabIndex = 2;
             // 
             // CashierWindowQueue
             // 
@@ -87,7 +87,7 @@
 
         private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.Button btnNext;
-        private System.Windows.Forms.ListView listCashierQueue;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.ListBox listCashierQueue;
     }
 }
