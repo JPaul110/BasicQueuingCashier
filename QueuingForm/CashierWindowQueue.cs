@@ -14,6 +14,8 @@ namespace QueuingForm
 {
     public partial class CashierWindowQueue : Form
     {
+
+        private ServingFrm servingFrm;
         public CashierWindowQueue()
         {
             InitializeComponent();
@@ -22,6 +24,9 @@ namespace QueuingForm
             timer.Interval = (1 * 1000);
             timer.Tick += new EventHandler(timer1_Tick);
             timer.Start();
+
+            servingFrm = new ServingFrm();
+            servingFrm.Show();
 
         }
 
@@ -43,6 +48,8 @@ namespace QueuingForm
         private void timer1_Tick(object sender, EventArgs e)
         {
             DisplayCashierQueue(CashierClass.CashierQueue);
+
+            servingFrm.ServingNumber();
         }
 
         private void btnNext_Click(object sender, EventArgs e)
@@ -51,6 +58,8 @@ namespace QueuingForm
             {
                 CashierClass.CashierQueue.Dequeue();
                 DisplayCashierQueue(CashierClass.CashierQueue);
+
+                servingFrm.ServingNumber();
 
             }
         }
