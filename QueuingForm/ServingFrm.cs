@@ -13,6 +13,7 @@ namespace QueuingForm
     public partial class ServingFrm : Form
     {
         
+        
         public ServingFrm()
         {
             InitializeComponent();
@@ -33,7 +34,7 @@ namespace QueuingForm
 
             else
             {
-                lblServing.Text = "P - ";
+                lblServing.Text = " ";
             }
         }
     }
